@@ -16,7 +16,8 @@ document.getElementById("submit-button").addEventListener("click", function() {
         document.getElementById("weather-log");
 
     weatherLog.innerHTML += `
-        <p>${temperature}°F | ${humidity}%</p>
+        <p>${temperature}&deg;F | ${humidity}%</p>
     `;
-
+document.getElementById("Temperature").value = "";
+document.getElementById("Humidity").value = "";
 });
