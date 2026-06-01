@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Daily Weather Tracker</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teachers:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="styles.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:wght@400&display=swap"
+          rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
     <h1>Daily Weather Tracker</h1>
 
-<div class="page-container">
+    <!-- CHART -->
 
-    <div class="form-container">
+    <div class="chart-container">
 
-    <form>
-  <label for="Temperature">Temperature:</label><br>
-  <input type="number" id="Temperature" name="Temperature">
-</form>
+        <h2>Climate Trends</h2>
 
-<form>
-  <label for="Humidity">Humidity:</label><br>
-  <input type="number" id="Humidity" name="Humidity">
-</form>
+        <canvas id="weather-chart"></canvas>
 
-</div>
+    </div>
 
-<button id="submit-button" class="submit-button">Submit</button>
+    <!-- PAGE CONTENT -->
 
-<h2 id="data-recorded" style="display: none;">
-    Data Recorded Successfully!
-</h2>
+    <div class="page-container">
 
-<div id="weather-log"></div>
+        <div class="form-container">
 
+            <form>
+                <label for="Temperature">
+                    Temperature:
+                </label>
+                <br>
 
-</div>
+                <input
+                    type="number"
+                    id="Temperature"
+                    name="Temperature">
+            </form>
 
-<h2 id="data-recorded" style="display: none;">
-    Data Recorded Successfully!
-</h2>
+            <form>
+                <label for="Humidity">
+                    Humidity:
+                </label>
+                <br>
 
-<div id="weather-log"></div>
+                <input
+                    type="number"
+                    id="Humidity"
+                    name="Humidity">
+            </form>
 
-<script src="script.js"></script>
+        </div>
+
+        <button
+            id="submit-button"
+            class="submit-button">
+
+            Submit
+
+        </button>
+
+        <h2
+            id="data-recorded"
+            style="display:none;">
+
+            Data Recorded Successfully!
+
+        </h2>
+
+        <div id="weather-log"></div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

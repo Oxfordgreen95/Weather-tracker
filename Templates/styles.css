@@ -27,7 +27,7 @@ humidity {
 
 
 .form-container {
-    margin-top: 350px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,4 +62,10 @@ form {
     color: lightblue;
     font-size: 18px;
     margin-top: 20px;
+}
+
+.chart-container {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto;
 }
